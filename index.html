@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Demo</title>
+</head>
+<body> 
+    <h2>WEB422 Week 1 Demo - WEB Services/APIs</h2>
+    <p>Example Features:</p>
+    <ul>
+        <li>Node.js and Express.js</li>
+        <li>No database is used</li>
+    </ul>
+
+    <h4>Items (WEB API Template CRUD operations for an entity - item)</h4>
+    <ul>
+        <li>C - Create new item - test using Thunder Client or Postman</li>
+        <li>R - Get all items <a href="/api/items">/api/items</a>
+            <ul>
+                <li>Get all with pagination<a href="/api/items?page=2">/api/items?page=2</a></li>
+            </ul>
+        </li> 
+        <li>R - Get one item <a href="/api/items/15">/api/items/15</a></li>
+        <li>U - Update existing item - test using Thunder Client or Postman</li>
+        <li>D - Delete item - test using Thunder Client or Postman</li>
+    </ul>
+
+    <h4>Colours Entity</h4>
+    <ul>
+        <li>Get all colours <a href="/api/colors">/api/colors</a></li>
+        <li>Get one colour <a href="/api/colors/2">/api/colors/2</a></li>
+    </ul>
+
+    <h4>Employees Entity</h4>
+    <ul>
+        <li>Get all employees <a href="/api/employees">/api/employees</a>
+            <ul>
+                <li>Get all with filters <a href="/api/employees?page=5">/api/employees?page=5</a></li>
+            </ul>
+            </li>
+        <li>Get one employee <a href="/api/employees/75">/api/employees/75</a> &nbsp;&nbsp;&nbsp;using Promise </li>
+        <li>Update existing employee. This example allow that the json object in req body does not have to include the "employeeId" property.</li> 
+    </ul>
+</body>
+</html>
+</body>
+</html>
