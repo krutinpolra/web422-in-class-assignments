@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 
@@ -43,33 +44,31 @@ export default function Home() {
           </ol>
 
           <div className={styles.ctas}>
-            <a
-              className={styles.primary}
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            {/* Updated Link without <a> */}
+            <Link href="/my-form" className={styles.primary}>
               <Image
                 className={styles.logo}
-                src="/vercel.svg"
-                alt="Vercel logomark"
+                src="/form-icon.svg"
+                alt="Form Icon"
                 width={20}
                 height={20}
               />
-              Deploy now
-            </a>
-            <a
+              Go to MyForm Page
+            </Link>
+
+            <Link
               href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              className={styles.secondary}
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.secondary}
             >
               Read our docs
-            </a>
+            </Link>
           </div>
         </main>
+
         <footer className={styles.footer}>
-          <a
+          <Link
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -82,8 +81,9 @@ export default function Home() {
               height={16}
             />
             Learn
-          </a>
-          <a
+          </Link>
+
+          <Link
             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -96,8 +96,9 @@ export default function Home() {
               height={16}
             />
             Examples
-          </a>
-          <a
+          </Link>
+
+          <Link
             href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -110,7 +111,7 @@ export default function Home() {
               height={16}
             />
             Go to nextjs.org →
-          </a>
+          </Link>
         </footer>
       </div>
     </>
